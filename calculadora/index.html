@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="content-container">
+        <div class = "result-container">
+            <input type="text" id="display" disabled>
+        </div>
+
+        <div class="buttons-container">
+            <button id="percent" onclick>%</button>
+            <button id="sign" onclick>+/-</button>
+            <button onclick="cleanDisplay()">C</button>
+            <button onclick="deleteLast()">
+                <i class="ri-delete-back-2-line"></i>
+            </button>
+             <button>
+                <i class="ri-square-root"></i>
+            </button>
+            <button id ="decimal-point" onclick>.</button>
+            <button id = "random">?</button>
+             <button onclick>
+               <i class="ri-divide-fill"></i>
+            </button>
+            <button value="7">7</button>
+            <button value="8">8</button>
+            <button value="9">9</button>
+            <button onclick>
+                <i class="ri-close-large-fill"></i>
+            </button>
+            <button value="4">4</button>
+            <button value="5">5</button>
+            <button value="6">6</button>
+            <button onclick>
+                <i class="ri-subtract-fill"></i>
+            </button>
+            <button value="1">1</button>
+            <button value="2">2</button>
+            <button value="3">3</button>
+            <button>
+                <i class="ri-add-large-line"></i>
+            </button>
+            <button id="less"><</button>
+            <button value="0">0</button>
+            <button id="greater">></button>
+            <button onclick="equal()" style="background-color: blue;">
+                <i class="ri-equal-line"></i>
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
